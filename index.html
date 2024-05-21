@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genshin News</title>
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar" id="Home">
+      <h1 class="logo">Genshin<span>News</span></h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Characters</a></li>
+        <li>
+          <a
+            href="https://wa.me/+6281275727502/?text= Kasih A+ ya Pak:)"
+            target="_blank"
+            >Contact</a>
+        </li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h2><span>Explore</span> The World of Teyvat</h2>
+        <div class="line4"></div>
+        <h1>Genshin Impact <span>News</span></h1>
+        <a href="#News" class="ctn">Selengkapnya...</a>
+      </div>
+    </header>
+
+    <!--Konten-->
+    <section class="events" id="News">
+      <div class="title">
+        <h1 class="title">Upcoming News</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./img/img2.jpg" class="img2" />
+          <h4 class="min-title1">Version 4.6 Event Wishes Notice - Phase II</h4>
+          <p class="desk1">
+            Event Wish "From Ashes Reborn" - Boosted Drop Rate for "Eons Adrift"
+            Wanderer (Anemo)!...
+          </p>
+          <a href="./page2.html" class="ctn">Baca Selengkapnya</a>
+        </div>
+        <div class="col">
+          <img src="./img/img3.jpg" class="img3" />
+          <h4 class="min-title2">Arlecchino dalam Update 4.6 Genshin Impact</h4>
+          <p class="desk2">
+            Penggemar Genshin Impact siap-siap untuk menyambut update terbaru
+            dari HoYoverse yang ...
+          </p>
+          <a href="./page1.html" class="ctn">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="about">
+      <div class="explore-content">
+        <h1 class="title">EXPLORE GAME <span>EVENTS</span></h1>
+        <div class="line4"></div>
+        <p class="desk4">
+          Genshin Impact's latest update, Version 4.6 'Two Worlds Aflame, the Crimson Night Fades,' launched on April 24, 2024. This version introduces new characters, quests, and optimizations. Stay tuned for Version 5.0, as Genshin Impact continues to expand its world of Teyvat for players to explore.
+        </p>
+        <a href="#" class="ctn4">Baca Selengkapnya</a>
+      </div>
+    </section>
+
+    <section class="upcoming" id="events">
+      <div class="row">
+        <div class="col content-col">
+          <h1 class="title">UP COMING EVENTS & NEW CHARACTERS</h1>
+          <div class="line"></div>
+          <p class="desk3">
+            Explore Teyvat's seven nations in Genshin Impact's thrilling action RPG! Master elemental combat, embark on quests, and join co-op adventures. New characters and updates await! Play now on Android, iOS, PS4, Windows, and PS5.
+          </p>
+          <a href="#" class="ctn">Baca Selengkapnya</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="./img/img4.jpg" alt="" />
+            <img src="./img/img5.jpg" alt="" />
+            <img src="./img/img6.jpg" alt="" />
+            <img src="./img/img7.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>
+        Batang Kuis 20372, Deli Serdang, Sumatra Utara, Indonesia | Phone:
+        +62-812-7572-7502 | Email: anggiat.kampus23@gmail.com
+      </p>
+      <p>Copyright © 2024 Genshin Impact News</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".img2, .desk1, .min-title1, .line", {
+        delay: 400,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".img3, .desk2, .min-title2", {
+        delay: 400,
+        origin: "right",
+      });
+      ScrollReveal().reveal(".ctn, .ctn4, .desk3, .title, .desk4", {
+        delay: 300,
+      });
+    </script>
+  </body>
+</html>
